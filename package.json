@@ -4,7 +4,7 @@
   "description": "a pretty vanilla parcel starter with just enough sugar to make you smile",
   "license": "UNLICENSED",
   "author": "Buster Collings <busterc@gmail.com> (https://about.me/buster)",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "prebuild": "npm run clean && npm run clean-cache && npm run lint",
     "build": "parcel build src/index.html --no-source-maps",
