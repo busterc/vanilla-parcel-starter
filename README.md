@@ -1,6 +1,6 @@
 # &#127846; vanilla-parcel-starter
 
-> a pretty vanilla parcel starter with just enough sugar to make you smile
+> a parcel starter with just enough sugar to make you smile
 
 _keep it vanilla or top it with react, preact, vue, framework7, ionic, etc._
 

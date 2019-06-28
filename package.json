@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "vanilla-parcel-starter",
-  "description": "a pretty vanilla parcel starter with just enough sugar to make you smile",
+  "description": "a parcel starter with just enough sugar to make you smile",
   "license": "UNLICENSED",
   "author": "Buster Collings <busterc@gmail.com> (https://about.me/buster)",
   "version": "0.0.2",
@@ -14,17 +14,19 @@
     "dev": "npm run start",
     "lint": "eslint src",
     "prestart": "npm run clean && npm run lint",
-    "start": "trap 'npm run clean-cache && exit 0' SIGINT ; parcel src/index.html --no-source-maps --open"
+    "start": "trap 'npm run clean-cache && exit 0' SIGINT ; node bundle"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
     "eslint": "^6.0.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-config-xo": "^0.26.0",
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-json": "^1.4.0",
     "eslint-plugin-prettier": "^3.1.0",
-    "husky": "^2.5.0",
+    "husky": "^2.7.0",
     "lint-staged": "^8.2.1",
     "node-sass": "^4.12.0",
     "parcel-bundler": "^1.12.3",
