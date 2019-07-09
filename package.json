@@ -7,11 +7,12 @@
   "version": "0.0.4",
   "scripts": {
     "prebuild": "npm run clean && npm run clean-cache && npm run lint",
-    "build": "NODE_ENV=production node parcel-build",
-    "clean": "rm -rf dist",
+    "build": "NODE_ENV=production node parcel-build && (cd cordova && cordova build)",
+    "clean": "rm -rf cordova/www",
     "clean-cache": "rm -rf .cache",
     "precommit": "eslint src && lint-staged",
     "dev": "npm run start",
+    "postinstall": "echo Use Template: parcel-cordova-template && create-cordova-app cordova",
     "lint": "eslint src",
     "prestart": "npm run clean && npm run lint",
     "start": "trap 'npm run clean-cache && exit 0' SIGINT ; node parcel-dev"
@@ -20,6 +21,8 @@
     "autoprefixer": "^9.6.1",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
+    "cordova": "^9.0.0",
+    "create-cordova-app": "^1.0.0",
     "eslint": "^6.0.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-config-xo": "^0.26.0",
