@@ -6,6 +6,8 @@ _keep it vanilla or top it with react, preact, vue, framework7, ionic, etc._
 
 ## 📱Cordova Branch
 
+**For Realtime App Content Updates: [See How to Configure Live-Server](https://gist.github.com/busterc/523e080e5661d61e4940390043cb083a)**
+
 ## Degit It
 
 ```sh
